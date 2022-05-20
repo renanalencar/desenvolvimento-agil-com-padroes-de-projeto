@@ -1,0 +1,20 @@
+package br.dev.rca;
+
+/**
+ * @author renanalencar Design Pattern: Singleton
+ */
+public class AchievementStorageFactory {
+
+	private static AchievementStorage a;
+
+	private AchievementStorageFactory(AchievementStorage a) {
+	}
+
+	public void setAchievementStorage(AchievementStorage a) {
+		AchievementStorageFactory(a);
+	}
+
+	public static AchievementStorage getAchievementStorage() {
+		return this.a;
+	}
+}

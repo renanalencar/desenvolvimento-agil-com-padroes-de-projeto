@@ -1,0 +1,19 @@
+package br.dev.rca;
+
+/**
+ * @author renanalencar
+ */
+public class AchievementStorageFactory {
+
+	private static AchievementStorage as = null;
+
+	private void setAchievementStorage(AchievementStorage a) {
+		as = a;
+	}
+
+	public static AchievementStorage getAchievementStorage() {
+		if (as == null)
+			setAchievementStorage();
+		return as;
+	}
+}

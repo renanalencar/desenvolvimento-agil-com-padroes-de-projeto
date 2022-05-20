@@ -1,0 +1,30 @@
+package br.dev.rca;
+
+/**
+ * @author renanalencar
+ */
+
+/**
+ * Crie uma classe chamada AchievementStorageFactory com o método estático
+ * "AchievementStorage getAchievementStorage()". Essa classe deve retornar a
+ * instância de AchievementStorage configurada através de outro método "void
+ * setAchievementStorage(AchievementStorage a)" no início da aplicação. Deve ser
+ * utilizado um padrão que permita que exista apenas uma instância de
+ * AchievementStorage sendo utilizada em toda aplicação. (Singleton Pattern)
+ */
+public class AchievementStorageFactory {
+
+	private static AchievementStorage as = null;
+
+	private static void setAchievementStorage(AchievementStorage a) {
+		as = a;
+	}
+
+	public static AchievementStorage getAchievementStorage() {
+		if (as == null) {
+			AchievementStorage achievementStorage = new MemoryAchievementStorage();
+			setAchievementStorage(achievementStorage);
+		}
+		return as;
+	}
+}

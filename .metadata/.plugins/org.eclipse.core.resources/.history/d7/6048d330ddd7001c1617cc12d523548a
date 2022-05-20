@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package br.dev.rca;
+
+/**
+ * @author renan
+ *
+ */
+public class CreationPointsObserver implements AchievementObserver {
+
+	@Override
+	public void achievementUpdate(String user, Achievement a) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

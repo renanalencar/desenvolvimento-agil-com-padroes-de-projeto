@@ -1,0 +1,29 @@
+package br.dev.rca;
+
+/**
+ * @author renanalencar
+ *
+ */
+
+/**
+ * Crie uma classe chamada Achievement para representar uma conquista. Cada
+ * instância deve possuir uma propriedade "name" que identifica o Achievement.
+ *
+ */
+public class Achievement {
+
+	private String name;
+
+	public Achievement(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

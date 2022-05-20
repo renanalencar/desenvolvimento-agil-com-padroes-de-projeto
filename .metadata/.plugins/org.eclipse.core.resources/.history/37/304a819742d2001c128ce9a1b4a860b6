@@ -1,0 +1,22 @@
+package br.dev.rca;
+
+public class Points extends Achievement {
+	
+	private int amount;
+
+	public Points(String name, int amount) {
+		super(name);
+		this.amount = 0;
+	}
+
+	public int getAmount() {
+		return amount;
+	}
+
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+	
+	
+
+}

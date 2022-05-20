@@ -1,0 +1,70 @@
+package br.dev.rca.test;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+import br.dev.rca.ForumServiceGamificationProxy;
+import br.dev.rca.MemoryAchievementStorage;
+
+/**
+ * @author renanalencar
+ *
+ */
+class ForumServiceGamificationProxyTest {
+	
+	private MemoryAchievementStorage memoryAchievementStorage;
+	private ForumServiceGamificationProxy proxy;
+	
+	@Before
+	void setUp() throws Exception {
+		this.memoryAchievementStorage = new MemoryAchievementStorage();
+	}
+
+	@Test
+	void testAddTopic() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testAddComment() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testLikeTopic() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testLikeComment() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testAddTopicTwice() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testInvokingSerevalMethods() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testMockException() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWhenHundredPointsCreationGetBadgeInventor() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWhenHundredPointsParticipationGetBadgePartOfTheCommunity() {
+		fail("Not yet implemented");
+	}
+
+}

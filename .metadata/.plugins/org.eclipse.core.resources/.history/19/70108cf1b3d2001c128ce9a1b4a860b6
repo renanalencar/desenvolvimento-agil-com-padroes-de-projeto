@@ -1,0 +1,37 @@
+package br.dev.rca;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * @author renanalencar
+ *
+ */
+public class MemoryAchievementStorage implements AchievementStorage {
+	
+	Map<String, Achievement> memory;
+	
+	public MemoryAchievementStorage() {
+		memory = new HashMap<>();
+	}
+
+	@Override
+	public void addAchievement(String user, Achievement a) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Achievement> getAchievements(String user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Achievement getAchievement(String user, String achievementName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

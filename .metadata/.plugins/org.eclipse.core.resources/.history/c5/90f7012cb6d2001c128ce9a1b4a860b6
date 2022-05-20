@@ -1,0 +1,45 @@
+package br.dev.rca;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * @author renanalencar
+ *
+ */
+public class MemoryAchievementStorage implements AchievementStorage {
+
+	private Map<String, List<Achievement>> memory;
+
+	public MemoryAchievementStorage() {
+		this.memory = new HashMap<>();
+	}
+
+	@Override
+	public void addAchievement(String user, Achievement a) {
+		List<Achievement> achievements = this.memory.get(user);
+
+	}
+
+	@Override
+	public List<Achievement> getAchievements(String user) {
+		List<Achievement> result = new ArrayList<>();
+
+		return result;
+	}
+
+	@Override
+	public Achievement getAchievement(String user, String achievementName) {
+		Achievement a;
+		List<Achievement> achievements = this.memory.get(user);
+		for (Achievement achievement : achievements) {
+			if (achievement.getName().equals(achievementName)) {
+				a = achievement;
+			}
+		}
+		return a;
+	}
+
+}

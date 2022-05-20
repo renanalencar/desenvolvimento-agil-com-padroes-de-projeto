@@ -1,0 +1,19 @@
+package br.dev.rca;
+
+/**
+ * @author renanalencar
+ *
+ */
+
+/**
+ * Badge representa um objetivo. Não faz sentido adicionar dois Achievement
+ * desse tipo com o mesmo nome para um mesmo usuário.
+ *
+ */
+public class Badge extends Achievement {
+
+	public Badge(String name) {
+		super(name);
+	}
+
+}

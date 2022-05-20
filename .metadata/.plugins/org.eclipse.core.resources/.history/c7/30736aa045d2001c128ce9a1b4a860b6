@@ -1,0 +1,54 @@
+package br.dev.rca.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AchievementStorageTest {
+
+	@Test
+	void testAddTopic() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testAddComment() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testLikeTopic() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testLikeComment() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testAddTopicTwice() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testInvokingSerevalMethods() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testMockException() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWhenHundredPointsCreationGetBadgeInventor() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testWhenHundredPointsParticipationGetBadgePartOfTheCommunity() {
+		fail("Not yet implemented");
+	}
+
+}

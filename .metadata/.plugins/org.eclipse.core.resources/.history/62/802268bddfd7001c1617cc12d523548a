@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package br.dev.rca;
+
+/**
+ * @author renanalencar
+ *
+ */
+public class ForumServiceGamificationProxy implements ForumService {
+
+	private ForumService forumService;
+
+	public ForumServiceGamificationProxy(ForumService forumService) {
+		this.forumService = forumService;
+	}
+
+	@Override
+	public void addTopic(String user, String topic) {
+		this.forumService.addTopic(user, topic);
+
+	}
+
+	@Override
+	public void addComment(String user, String topic, String comment) {
+		this.forumService.addComment(user, topic, comment);
+
+	}
+
+	@Override
+	public void likeTopic(String user, String topic, String topicUser) {
+		this.forumService.likeComment(topicUser, topic, topicUser, user);
+
+	}
+
+	@Override
+	public void likeComment(String user, String topic, String comment, String commentUser) {
+		this.forumService.likeComment(user, topic, comment, commentUser);
+
+	}
+
+}

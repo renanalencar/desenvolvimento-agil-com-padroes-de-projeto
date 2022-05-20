@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;SegurancaNegocio.java&apos; to &apos;SegurancaProxy/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;SegurancaProxy&apos;&#x0D;&#x0A;- Destination element: &apos;SegurancaProxy/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;SegurancaNegocio.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;" element1="/test&lt;{SegurancaNegocio.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1628625834844" units="1" version="1.0"/>
+</session>

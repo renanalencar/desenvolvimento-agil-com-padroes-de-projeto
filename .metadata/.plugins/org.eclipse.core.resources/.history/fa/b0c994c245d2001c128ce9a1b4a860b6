@@ -1,0 +1,9 @@
+package br.dev.rca;
+
+public class Badge extends Achievement {
+
+	public Badge(String name) {
+		super(name);
+	}
+
+}

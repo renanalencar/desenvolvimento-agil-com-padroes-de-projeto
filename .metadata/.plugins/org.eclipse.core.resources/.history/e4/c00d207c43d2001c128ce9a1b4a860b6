@@ -1,0 +1,7 @@
+package br.dev.rca;
+
+public class AchievementStorageFactory {
+	public static AchievementStorage getAchievementStorage() {
+		return null;
+	}
+}

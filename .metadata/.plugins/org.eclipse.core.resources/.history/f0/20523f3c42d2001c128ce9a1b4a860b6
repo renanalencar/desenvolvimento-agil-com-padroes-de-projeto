@@ -1,0 +1,5 @@
+package br.dev.rca;
+
+public class Points extends Achievement {
+
+}

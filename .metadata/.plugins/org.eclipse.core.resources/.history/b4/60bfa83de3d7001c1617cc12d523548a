@@ -1,0 +1,83 @@
+package br.dev.rca.test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+import br.dev.rca.AchievementStorage;
+import br.dev.rca.AchievementStorageFactory;
+import br.dev.rca.CreationPointsObserver;
+import br.dev.rca.ForumServiceGamificationProxy;
+import br.dev.rca.ParticipationPointsObserver;
+import br.dev.rca.Points;
+
+/**
+ * @author renanalencar
+ *
+ */
+class ForumServiceGamificationProxyTest {
+	
+	private AchievementStorage achievementStorage;
+	private ForumServiceGamificationProxy proxy;
+	private ForumServiceMock mockService;
+	
+	@Before
+	void setUp() throws Exception {
+		this.achievementStorage = AchievementStorageFactory.getAchievementStorage();
+		this.achievementStorage.addObserver(new CreationPointsObserver());
+		this.achievementStorage.addObserver(new ParticipationPointsObserver());
+		
+		this.mockService = new ForumServiceMock();
+		this.proxy = new ForumServiceGamificationProxy(mockService);
+	}
+
+	@Test
+	void testAddTopic() {
+		this.proxy.addTopic("Mario", "Hello world!");
+		Points points = (Points) this.achievementStorage.getAchievement("Mario", "CREATION");
+		assertEquals(5, points.getAmount());
+	}
+	
+//	@Test
+//	void testAddComment() {
+//		fail("Not yet implemented");
+//	}
+//	
+//	@Test
+//	void testLikeTopic() {
+//		fail("Not yet implemented");
+//	}
+//	
+//	@Test
+//	void testLikeComment() {
+//		fail("Not yet implemented");
+//	}
+//	
+//	@Test
+//	void testAddTopicTwice() {
+//		fail("Not yet implemented");
+//	}
+//	
+//	@Test
+//	void testInvokingSerevalMethods() {
+//		fail("Not yet implemented");
+//	}
+//	
+//	@Test
+//	void testMockException() {
+//		fail("Not yet implemented");
+//	}
+//	
+//	@Test
+//	void testWhenHundredPointsCreationGetBadgeInventor() {
+//		fail("Not yet implemented");
+//	}
+//	
+//	@Test
+//	void testWhenHundredPointsParticipationGetBadgePartOfTheCommunity() {
+//		fail("Not yet implemented");
+//	}
+
+}
